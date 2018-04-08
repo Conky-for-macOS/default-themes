@@ -187,7 +187,7 @@ gauge = {
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
 {
-    name='downspeedf',           arg='eth0',                     max_value=100,
+    name='downspeedf',           arg='en0',                     max_value=100,
     x=70,                          y=660,
     graph_radius=54,
     graph_thickness=7,
@@ -208,7 +208,7 @@ gauge = {
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
 {
-    name='upspeedf',           arg='eth0',                     max_value=100,
+    name='upspeedf',           arg='en0',                     max_value=100,
     x=70,                          y=660,
     graph_radius=42,
     graph_thickness=7,
