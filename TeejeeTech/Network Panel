@@ -35,7 +35,10 @@ conky.config = {
 	own_window_colour = '#000000',
 	own_window_argb_visual = false,
 	own_window_argb_value = 0,
-	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+-- FIXME
+-- If I enable the 'undecorated' hint it causes the window
+-- to show with a weird size
+	own_window_hints = 'decorated,below,sticky,skip_taskbar,skip_pager',
 
 	minimum_width = 170, minimum_height = 0,
 	stippled_borders = 0,
@@ -62,5 +65,5 @@ ${downspeedgraph en0 80,}
 ${color2}Upload ${color0}${alignr}${upspeedf en0} KiB/s 
 ${upspeedgraph en0 80,} 
 ${color2}Local${color0}${alignr}${addrs}
-${color2}Public${color0}${alignr}${execi 3600 wget -q -O /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1}
+${color2}Public${color0}${alignr}${execi 3600 dig +short myip.opendns.com @resolver1.opendns.com}
 ]];
