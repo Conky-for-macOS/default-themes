@@ -5,7 +5,7 @@ conky.config = {
 -- Webpage: http://teejeetech.blogspot.in/
 -- **********************************************************************
 
-	background = true,
+	background = false,
 	double_buffer = true,
 
 	alignment = 'bottom_left',

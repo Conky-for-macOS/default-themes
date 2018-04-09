@@ -6,7 +6,7 @@ conky.config = {
 -- **********************************************************************
 
 
-	background = true,
+	background = false,
 	double_buffer = true,
 
 	alignment = 'bottom_left',
