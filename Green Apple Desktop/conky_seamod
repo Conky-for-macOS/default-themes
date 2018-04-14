@@ -12,7 +12,7 @@ conky.config = {
 -- conkyrc_lunatico:  http://gnome-look.org/content/show.php?content=142884
 --==============================================================================
 
-	background = true,
+	background = false,
 	update_interval = 1,
 
 	cpu_avg_samples = 1,
@@ -40,7 +40,7 @@ conky.config = {
 	own_window_argb_visual = false,
 	own_window_colour = '#000000',
 	own_window_argb_value = 0,
-	own_window_hints = 'undecorate,sticky,skip_taskbar,skip_pager,below',
+	own_window_hints = 'sticky,skip_taskbar,skip_pager,below',
 
 	border_inner_margin = 0,
 	border_outer_margin = 0,
@@ -94,7 +94,7 @@ ${offset 105}${font Ubuntu:size=10,weight:normal}${color4}${top_mem name 1}${ali
 ${offset 105}${font Ubuntu:size=10,weight:normal}${color1}${top_mem name 2}${alignr}${top_mem mem 2}%
 ${offset 105}${font Ubuntu:size=10,weight:normal}${color2}${top_mem name 3}${alignr}${top_mem mem 3}%
 ${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 4}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 5}%
+${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top_mem name 5}${alignr}${top_mem mem 5}%
 
 # Showing disk partitions: root, home and Data
 ${voffset 28}

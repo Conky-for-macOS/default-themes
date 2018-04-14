@@ -12,7 +12,7 @@ conky.config = {
 -- conkyrc_lunatico:  http://gnome-look.org/content/show.php?content=142884
 --==============================================================================
 
-	background = true,
+	background = false,
 	update_interval = 1,
 
 	cpu_avg_samples = 1,
@@ -35,7 +35,7 @@ conky.config = {
 	own_window_argb_visual = false,
 	own_window_colour = '#000000',
 	own_window_argb_value = 0,
-	own_window_hints = 'undecorate,sticky,skip_taskbar,skip_pager,below',
+	own_window_hints = 'sticky,skip_taskbar,skip_pager,below',
 
 	border_inner_margin = 0,
 	border_outer_margin = 0,
