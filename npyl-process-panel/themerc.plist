@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>source</key>
+	<string>https://github.com/Conky-for-macOS/default-themes</string>
+	<key>creator</key>
+	<string>TeeJee, npyl</string>
+	<key>wallpaper</key>
+	<string>/Users/npyl/Documents/Conky/npyl-process-panel/wallpaper.jpg</string>
+	<key>conkyConfigs</key>
+	<array>
+		<string>/Users/npyl/Documents/Conky/npyl/npyl</string>
+	</array>
+</dict>
+</plist>
