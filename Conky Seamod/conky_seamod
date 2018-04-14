@@ -99,7 +99,7 @@ ${offset 105}${font Ubuntu:size=10,weight:normal}${color4}${top_mem name 1}${ali
 ${offset 105}${font Ubuntu:size=10,weight:normal}${color1}${top_mem name 2}${alignr}${top_mem mem 2}%
 ${offset 105}${font Ubuntu:size=10,weight:normal}${color2}${top_mem name 3}${alignr}${top_mem mem 3}%
 ${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 4}%
-${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top_mem name 4}${alignr}${top_mem mem 5}%
+${offset 105}${font Ubuntu:size=10,weight:normal}${color3}${top_mem name 5}${alignr}${top_mem mem 5}%
 
 # Showing disk partitions: root, home and Data
 ${voffset 28}
