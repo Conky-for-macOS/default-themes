@@ -64,6 +64,6 @@ ${color2}Download ${color0}${alignr}${downspeedf en0} KiB/s
 ${downspeedgraph en0 80,}
 ${color2}Upload ${color0}${alignr}${upspeedf en0} KiB/s 
 ${upspeedgraph en0 80,} 
-${color2}Local${color0}${alignr}${addrs}
+${color2}Local${color0}${alignr}${addr en0}
 ${color2}Public${color0}${alignr}${execi 3600 dig +short myip.opendns.com @resolver1.opendns.com}
 ]];
