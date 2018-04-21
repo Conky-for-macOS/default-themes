@@ -67,7 +67,7 @@ color4 = '#EF5A29',
 color5 = '#77B753',
 
 -- Loading lua script for drawning rings
-lua_load = './seamod_rings.lua',
+lua_load = '~/Documents/Conky/npylSeamod/seamod_rings.lua',
 lua_draw_hook_post = 'main',
 
 --# System information using conky capabilities
