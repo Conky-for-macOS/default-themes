@@ -2,15 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>configs</key>
+	<array>
+		<string>/Users/npyl/default-themes/npyl-process-panel/npyl-process-panel</string>
+	</array>
 	<key>source</key>
 	<string>https://github.com/Conky-for-macOS/default-themes</string>
 	<key>creator</key>
 	<string>TeeJee, npyl</string>
 	<key>wallpaper</key>
 	<string>/Users/npyl/Documents/Conky/npyl-process-panel/wallpaper.jpg</string>
-	<key>conkyConfigs</key>
-	<array>
-		<string>/Users/npyl/Documents/Conky/npyl/npyl</string>
-	</array>
 </dict>
 </plist>
