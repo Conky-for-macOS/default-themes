@@ -14,7 +14,7 @@ conky.config = {
 --											   #
 --###########################################################################################
 
-	background = true,
+	background = false,
 	double_buffer = true,
 	no_buffers = true,
 	text_buffer_size = 2048,
@@ -75,11 +75,11 @@ ${goto 10}${voffset 10}${font Adele:size=22,weight:normal}${color1}${time %A}${f
 ${voffset -15}${color1}${font Adele:size=14,weight:light}${alignc}${execpi 80000 ncal -MCh|sed '/\(20[0-9][0-9]\)/!s/^.*$/${offset 10}${font Courier:size=12,weight:light}${color4} &/;/\(20[0-9][0-9]\)/!s/.\{8\}$/${color3}&/;s/${color3} '"`date +%_d`"' /${color1} '"`date +%_d`"'${color3} /;/color1/!s/ '"`date +%_d`"'$c/${color1} '"`date +%_d`"'$c/;/color1/!s/ '"`date +%_d`"' /${color1} '"`date +%_d`"'${color2} /'}
 #
 # info
-${goto 10}$color1${voffset -10}${font Adele:size=15,weight:normal}${pre_exec lsb_release -d | cut -f 2| tr "[:upper:]" "[:upper:]"}${alignr 5}codename: ${pre_exec lsb_release -c | cut -f 2| tr "[:upper:]" "[:upper:]"}
+#${goto 10}$color1${voffset -10}${font Adele:size=15,weight:normal}${pre_exec lsb_release -d | cut -f 2| tr "[:upper:]" "[:upper:]"}${alignr 5}codename: ${pre_exec lsb_release -c | cut -f 2| tr "[:upper:]" "[:upper:]"}
 # $sysname
 ${goto 10}$kernel
-${goto 10}Desktop:${alignr 5}$XDG_CURRENT_DESKTOP
-${goto 10}Installation date:${alignr 5}${pre_exec ls -ld /lost+found | cut -d' ' -f 6-7 --output-delimiter=' - '}
+#${goto 10}Desktop:${alignr 5}$XDG_CURRENT_DESKTOP
+#${goto 10}Installation date:${alignr 5}${pre_exec ls -ld /lost+found | cut -d' ' -f 6-7 --output-delimiter=' - '}
 ${goto 10}Uptime:${alignr 5}$uptime
 #
 # cpu load/temp/graph
@@ -103,15 +103,15 @@ ${goto 10}${voffset -2}${top_mem name 3}${alignr 10}${top mem 3}%
 ${goto 10}${voffset -2}${top_mem name 4}${alignr 10}${top mem 4}%
 #
 #network
-${voffset 10}${goto 10}Network${alignr 10}SSID: ${wireless_essid wlan0}
-${goto 10}Signal:${goto 70}${color2}${wireless_link_bar wlan0}${color1}${alignr 10}${wireless_link_qual_perc wlan0}%
-${goto 10}IP: ${alignr 10}${addr wlan0}
-${voffset 5}${goto 10}${color1}Upspeed:${alignr 10}${upspeed wlan0}
-${goto 10}${voffset 0}Total up:${alignr 10}${totalup wlan0}
-${goto 10}${color2}${upspeedgraph wlan0 40,220 66241C FF5A45 100 -l}
-${goto 10}${color1}Down:$color1${alignr 10}${downspeed wlan0}
-${goto 10}Total down:${alignr 10}${totaldown wlan0}
-${goto 10}${color2}${downspeedgraph wlan0 40,220 66241C FF5A45 100 -l}
+${voffset 10}${goto 10}Network${alignr 10}SSID: ${wireless_essid en0}
+${goto 10}Signal:${goto 70}${color2}${wireless_link_bar en0}${color1}${alignr 10}${wireless_link_qual_perc en0}%
+${goto 10}IP: ${alignr 10}${addr en0}
+${voffset 5}${goto 10}${color1}Upspeed:${alignr 10}${upspeed en0}
+${goto 10}${voffset 0}Total up:${alignr 10}${totalup en0}
+${goto 10}${color2}${upspeedgraph en0 40,220 66241C FF5A45 100 -l}
+${goto 10}${color1}Down:$color1${alignr 10}${downspeed en0}
+${goto 10}Total down:${alignr 10}${totaldown en0}
+${goto 10}${color2}${downspeedgraph en0 40,220 66241C FF5A45 100 -l}
 #
 # weather
 #
