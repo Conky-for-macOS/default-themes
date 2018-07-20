@@ -78,7 +78,7 @@ ${voffset -15}${color1}${font Adele:size=14,weight:light}${alignc}${execpi 80000
 #${goto 10}$color1${voffset -10}${font Adele:size=15,weight:normal}${pre_exec lsb_release -d | cut -f 2| tr "[:upper:]" "[:upper:]"}${alignr 5}codename: ${pre_exec lsb_release -c | cut -f 2| tr "[:upper:]" "[:upper:]"}
 # $sysname
 ${goto 10}$kernel
-#${goto 10}Desktop:${alignr 5}$XDG_CURRENT_DESKTOP
+${goto 10}Desktop:${alignr 5}Aqua
 #${goto 10}Installation date:${alignr 5}${pre_exec ls -ld /lost+found | cut -d' ' -f 6-7 --output-delimiter=' - '}
 ${goto 10}Uptime:${alignr 5}$uptime
 #
