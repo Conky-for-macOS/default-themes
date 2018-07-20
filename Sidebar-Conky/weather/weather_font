@@ -1,0 +1,99 @@
+#!/bin/bash
+case $1 in
+		0) # tornado
+			echo 1
+		;;
+		1|4|38|39) # tropical storm,thunderstorms,scattered thunderstorms
+			echo l
+		;;
+		2) # hurricane
+			echo 3
+		;;
+		3) # severe thunderstorms
+			echo n
+		;;
+		5|7|18) # mixed rain and snow,mixed snow and sleet,sleet
+			echo y
+		;;
+		6|35) # mixed rain and sleet,mixed rain and hail
+			echo v
+		;;
+		8|9|10) # freezing drizzle,drizzle,freezing rain
+			echo x
+		;;
+		11|12|40) # showers,scattered showers
+			echo s
+		;;
+		13) # snow flurries
+			echo p
+		;;
+		14|42|46) # light snow showers,scattered snow showers,snow showers
+			echo o
+		;;
+		15) # blowing snow
+			echo 8
+		;;
+		16) # snow
+			echo q
+		;;
+		17) # hail
+			echo u
+		;;
+		19) # dust
+			echo 7
+		;;
+		20) # foggy
+			echo 0
+		;;
+		21|29) # haze,partly cloudy (night)
+			echo C
+		;;
+		22|24) # smoky,windy
+			echo 9
+		;;
+		23) # blustery
+			echo 2
+		;;
+		25) # cold
+			echo E
+		;;
+		26) # cloudy
+			echo e
+		;;
+		27) # mostly cloudy (night)
+			echo D
+		;;
+		28) # mostly cloudy (day)
+			echo d
+		;;
+		30|44) # partly cloudy (day),partly cloudy
+			echo c
+		;;
+		31) # clear (night)
+			echo A
+		;;
+		32) # sunny
+			echo a
+		;;
+		33) # fair (night)
+			echo B
+		;;
+		34) # fair (day)
+			echo a
+		;;
+		36) # hot
+			echo 5
+		;;
+		37|45|47) # isolated thunderstorms,thundershowers,isolated thundershowers
+			echo k
+		;;
+		41) # heavy snow
+			echo r
+		;;
+		43) # heavy snow
+			echo r
+		;;
+		*)
+			echo -
+		;;
+	esac
