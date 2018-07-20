@@ -1,70 +1,73 @@
+conky.config = {
 
-############################################################################################
-# Sidebar-Conky					 					   #
-# by wim66 https://www.google.com/+WillemO						   #
-# 26-5-15										   #
-# "Inspired by" other people's code							   #
-# Calendar, more great conky's http://erikdubois.be/category/conky			   #
-# Jesse Avalos http://speedracker.deviantart.com/					   #
-# Weather font by Kelly Kretchek https://plus.google.com/u/0/103934698784251707937/posts   #
-# Wallpaper http://0rax0.deviantart.com/art/Linux-2014-Wallpaper-457151439		   #
-# Use with Conky-Manager								   #
-# http://www.teejeetech.in/p/conky-manager.html						   #
-#											   #
-############################################################################################
+--###########################################################################################
+-- Sidebar-Conky					 					   #
+-- by wim66 https://www.google.com/+WillemO						   #
+-- 26-5-15										   #
+-- "Inspired by" other people's code							   #
+-- Calendar, more great conky's http://erikdubois.be/category/conky			   #
+-- Jesse Avalos http://speedracker.deviantart.com/					   #
+-- Weather font by Kelly Kretchek https://plus.google.com/u/0/103934698784251707937/posts   #
+-- Wallpaper http://0rax0.deviantart.com/art/Linux-2014-Wallpaper-457151439		   #
+-- Use with Conky-Manager								   #
+-- http://www.teejeetech.in/p/conky-manager.html						   #
+--											   #
+--###########################################################################################
 
-background yes
-double_buffer yes
-no_buffers yes
-text_buffer_size 2048
-imlib_cache_size 0
-update_interval 1
-cpu_avg_samples 1
-format_human_readable
+	background = true,
+	double_buffer = true,
+	no_buffers = true,
+	text_buffer_size = 2048,
+	imlib_cache_size = 0,
+	update_interval = 1,
+	cpu_avg_samples = 1,
+	format_human_readable = true,
 
-alignment top_left
-gap_x 0
-gap_y 0
-minimum_size 240 1080
-maximum_width 240
+	alignment = 'top_left',
+	gap_x = 0,
+	gap_y = 0,
+	minimum_width = 240, minimum_height = 1080,
+	maximum_width = 240,
 
-own_window yes
-own_window_type normal	# options are: normal/override/dock/desktop/panel
-own_window_class Conky
-own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-own_window_transparent yes
-own_window_colour 333333
-own_window_argb_visual no
-own_window_argb_value 0
+	own_window = true,
+	own_window_type = 'normal',-- options are: normal/override/dock/desktop/panel
+	own_window_class = 'Conky',
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_transparent = true,
+	own_window_colour = '#333333',
+	own_window_argb_visual = false,
+	own_window_argb_value = 0,
 
-border_inner_margin 0
-border_outer_margin 0
+	border_inner_margin = 0,
+	border_outer_margin = 0,
 
-default_bar_size 100 6
-draw_shades no
-default_shade_color 000000
-draw_outline no
-default_outline_color 000000
-draw_borders no
-draw_graph_borders yes
-default_graph_size 40,220
-show_graph_scale no
-show_graph_range no
+	default_bar_width = 100, default_bar_height = 6,
+	draw_shades = false,
+	default_shade_color = '#000000',
+	draw_outline = false,
+	default_outline_color = '#000000',
+	draw_borders = false,
+	draw_graph_borders = true,
+	default_graph_width = 40,220,
+	show_graph_scale = false,
+	show_graph_range = false,
 
-override_utf8_locale yes
-use_xft yes
-xftfont Adele:size=13,weight:normal
-xftalpha 1
-uppercase no
-max_text_width 40
+	override_utf8_locale = true,
+	use_xft = true,
+	font = 'Adele:size=13,weight:normal',
+	xftalpha = 1,
+	uppercase = false,
+	max_text_width = 40,
 
-default_color ffffff
-color1 ffffff
-color2 FF5A45
-color3 81CAE0
-color4 FF5A45
+	default_color = '#ffffff',
+	color1 = '#ffffff',
+	color2 = '#FF5A45',
+	color3 = '#81CAE0',
+	color4 = '#FF5A45',
 
-TEXT
+};
+
+conky.text = [[
 # day/time
 ${goto 10}${voffset 10}${font Adele:size=22,weight:normal}${color1}${time %A}${font Adele:size=30,weight:normal}${alignr 5}${time %H:%M}
 #
@@ -136,3 +139,4 @@ ${image arrow-up.png -p 10,988 -s 15x15}
 #
 ${image arrow-down.png -p 65,988 -s 15x15}
 #
+]];
