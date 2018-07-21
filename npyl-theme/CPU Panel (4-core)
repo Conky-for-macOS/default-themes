@@ -1,14 +1,8 @@
 conky.config = {
 -- **********************************************************************
--- "CPU Panel (8-core)" theme for Conky by Tony George (teejee2008@gmail.com)
+-- "CPU Panel (4-core)" theme for Conky by Tony George (teejee2008@gmail.com)
 
 -- Webpage: http://teejeetech.blogspot.in/
---
--- (npyl):
--- I just copied Teejee's code for "Process Panel" as an example of a ManageConky Theme.
--- CHANGES: 
--- - removed the 5th-cpu. 
---
 -- **********************************************************************
 
 
@@ -27,8 +21,8 @@ conky.config = {
 	draw_outline = false,
 	draw_shades = false,
 
-	gap_x = 450,
-	gap_y = 20,
+	gap_x = 20,
+	gap_y = 40,
 	net_avg_samples = 2,
 	no_buffers = true,
 	out_to_console = false,
@@ -43,9 +37,9 @@ conky.config = {
 	own_window_argb_value = 0,
 	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 
-	minimum_width = 170, minimum_height = 0,
+	minimum_width = 300, minimum_height = 230,
 	stippled_borders = 0,
-	update_interval = 2.0,
+	update_interval = 1.0,
 	uppercase = false,
 	use_spacer = 'none',
 
@@ -54,7 +48,7 @@ conky.config = {
 
 	use_xft = true,
 	xftalpha = 0.1,
-	font = 'Droid Sans:size=10',
+	font = 'Droid Sans:size=12',
 	color0 = 'white',
 	color1 = '#EAEAEA',
 	color2 = '#FFA300',
@@ -63,19 +57,10 @@ conky.config = {
 };
 
 conky.text = [[
-${color2}CPU ${color0}${alignr}${cpu cpu0}%
-${cpubar cpu0 5,}
-${top name 1} $alignr ${top cpu 1}%
-${top name 2} $alignr ${top cpu 2}%
-${top name 3} $alignr ${top cpu 3}%
-${top name 4} $alignr ${top cpu 4}%
-
-${color2}RAM ${color0}${alignr}${mem}
-${membar 5,}
-${top_mem name 1} $alignr ${top_mem mem_res 1}
-${top_mem name 2} $alignr ${top_mem mem_res 2}
-${top_mem name 3} $alignr ${top_mem mem_res 3}
-${top_mem name 4} $alignr ${top_mem mem_res 4}
-${top_mem name 5} $alignr ${top_mem mem_res 5}
-
+${color2}CPU ${color0} ${cpu cpu0}%  ${color3}${cpubar cpu0 10,} 
+${cpugraph cpu0 100,300}${voffset -19}
+${cpugraph cpu1 50,150}${cpugraph cpu2 50,150}${voffset -19}
+${cpugraph cpu3 50,150}${cpugraph cpu4 50,150}
+${font Ubuntu:size=10}${voffset -110}${color3}${goto 10}1 ${goto 160}2 ${goto 0} ${voffset 50} ${goto 10}3 ${goto 160}4
+${font Ubuntu:size=8}${voffset -67}${color3}${goto 108}${freq_g (1)}GHz ${goto 258}${freq_g (2)}GHz ${goto 0}${voffset 50}${goto 108}${freq_g (3)}GHz ${goto 258}${freq_g (4)}GHz 
 ]];

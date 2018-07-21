@@ -4,13 +4,14 @@
 <dict>
 	<key>configs</key>
 	<array>
-		<string>/Users/npyl/default-themes/npyl-process-panel/npyl-process-panel</string>
+		<string>~/Documents/Conky/npyl-theme/Gotham</string>
+		<string>~/Documents/Conky/npyl-theme/CPU Panel (4-core)</string>
 	</array>
 	<key>source</key>
 	<string>https://github.com/Conky-for-macOS/default-themes</string>
 	<key>creator</key>
-	<string>TeeJee, npyl</string>
+	<string>psyjunta, npyl</string>
 	<key>wallpaper</key>
-	<string>/Users/npyl/Documents/Conky/npyl-process-panel/wallpaper.jpg</string>
+	<string>~/Documents/Conky/npyl-theme/deadpool-wallpaper.jpg</string>
 </dict>
 </plist>
