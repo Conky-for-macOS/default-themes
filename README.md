@@ -1,5 +1,7 @@
 # default-themes
 
+All Widgets and Themes have been converted to 1.10 syntax.
+
 *DISCLAIMER:* I **DO NOT own nor have created any of these conky Widgets / Themes except of one (npyl-process-panel) which is based on conky_seamod irc.**
 
 The creator is usually written inside the respective Theme / Widget.
