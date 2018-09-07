@@ -59,8 +59,8 @@ conky.config = {
 conky.text = [[
 ${color2}CPU ${color0} ${cpu cpu0}%  ${color3}${cpubar cpu0 10,} 
 ${cpugraph cpu0 100,300}${voffset -19}
-${cpugraph cpu1 50,150}${cpugraph cpu2 50,150}${voffset -19}
-${cpugraph cpu3 50,150}${cpugraph cpu4 50,150}
+${cpugraph cpu0 50,150}${cpugraph cpu1 50,150}${voffset -19}
+${cpugraph cpu2 50,150}${cpugraph cpu3 50,150}
 ${font Ubuntu:size=10}${voffset -110}${color3}${goto 10}1 ${goto 160}2 ${goto 0} ${voffset 50} ${goto 10}3 ${goto 160}4
 ${font Ubuntu:size=8}${voffset -67}${color3}${goto 108}${freq_g (1)}GHz ${goto 258}${freq_g (2)}GHz ${goto 0}${voffset 50}${goto 108}${freq_g (3)}GHz ${goto 258}${freq_g (4)}GHz 
 ]];
